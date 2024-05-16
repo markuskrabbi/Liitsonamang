@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,18 @@ button:hover {
   margin: 20px;
 }
 
-.word, .dropzone {
+.dropzone {
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #acc5ac;
+}
+
+.word {
   padding: 20px;
   margin: 10px;
   width: 100px;
