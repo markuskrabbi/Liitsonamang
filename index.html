@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liitsõna mäng</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="home-container">
+        <h1 onclick="goHome()">Liitsõna mäng</h1>
+        <button onclick="showSection('game-container')">Mine mängima</button>
+        <button onclick="showSection('rules-container')">Reeglid</button>
+        <button onclick="showSection('about-container')">Mängust</button>
+    </div>
+
+    <div id="game-container" style="display: none;">
+        <h1 onclick="goHome()">Liitsõna mäng</h1>
+        <div id="level-container">
+            <p id="level-text">Tase 1</p>
+        </div>
+        <div id="word-container">
+            <div class="word" draggable="true" id="word1"></div>
+            <div class="word" draggable="true" id="word2"></div>
+            <div class="word" draggable="true" id="word3"></div>
+            <div class="word" draggable="true" id="word4"></div>
+            <div class="word" draggable="true" id="word5"></div>
+            <div class="word" draggable="true" id="word6"></div>
+            <div class="word" draggable="true" id="word7"></div>
+            <div class="word" draggable="true" id="word8"></div>
+        </div>
+        <div id="drop-container">
+            <div class="dropzone" id="dropzone1"></div>
+            <div class="dropzone" id="dropzone2"></div>
+        </div>
+        <div id="result-container">
+            <p id="result-message"></p>
+        </div>
+        <button id="next-level" onclick="nextLevel()">Järgmine tase</button>
+        <button id="restart" onclick="restartGame()">Mängi algusest</button>
+    </div>
+
+    <div id="rules-container" style="display: none;">
+        <h1 onclick="goHome()">Liitsõna mäng</h1>
+        <h2>Reeglid</h2>
+        <p>Lohista õiged sõnad kasti, et moodustada kokku liitsõna. <br>Kui moodustasid sõna õigesti, siis on võimalus minna järgmise taseme juurde. <br>Kui ei arvanud õigesti, proovi uuesti.</p>
+        <button class="back-button" onclick="goHome()">Tagasi</button>
+    </div>
+
+    <div id="about-container" style="display: none;">
+        <h1 onclick="goHome()">Liitsõna mäng</h1>
+        <h2>About the Game</h2>
+        <p>This game was created to help you learn and practice Estonian compound words. Have fun and good luck!</p>
+        <button class="back-button" onclick="goHome()">Tagasi</button>
+    </div>
+
+    <div id="overlay" style="display: none;">
+        <div id="compound-word-box">
+            <p id="compound-word"></p>
+        </div>
+    </div>
+
+    <div id="congrats-container" style="display: none;">
+        <h1>Tubli!</h1>
+        <p>Sa läbisid kõik tasemed.</p>
+        <button id="restart-game" onclick="restartGame()">Mängi uuesti</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
