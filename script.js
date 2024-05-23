@@ -1,14 +1,14 @@
 let levels = [
   { word1: "õun", word2: "puu", wrong: ["saabas", "koer", "auto", "disko", "püksid", "kala"], compound: "õunapuu" },
   { word1: "auto", word2: "varuosa", wrong: ["saabas", "koer", "lamp", "teemant", "kala", "valgus"], compound: "autovaruosa" },
-  { word1: "raamatu", word2: "kogu", wrong: ["tool", "tiik", "klaviatuur", "ekraan", "koer", "tass"], compound: "raamatukogu" },
-  { word1: "järve", word2: "äärne", wrong: ["clock", "phone", "box", "glove", "shoe", "brush"], compound: "järveäärne" },
-  { word1: "kooli", word2: "maja", wrong: ["door", "window", "bat", "cup", "bottle", "plate"], compound: "koolimaja" },
-  { word1: "käe", word2: "kott", wrong: ["hat", "sock", "jacket", "trousers", "apple", "banana"], compound: "käekott" },
-  { word1: "sõidu", word2: "rada", wrong: ["river", "lake", "ocean", "sea", "mountain", "valley"], compound: "sõidurada" },
-  { word1: "lille", word2: "pott", wrong: ["guitar", "piano", "drum", "violin", "trumpet", "flute"], compound: "lillepott" },
-  { word1: "tee", word2: "äärne", wrong: ["sinine", "harva", "varvas", "rull", "tõuks", "motikate"], compound: "teeäärne" },
-  { word1: "laste", word2: "aed", wrong: ["kool", "pliiats", "karv", "muna", "joonlaua", "teritaja"], compound: "lasteaed" },
+  { word1: "raamat", word2: "kogu", wrong: ["tool", "tiik", "klaviatuur", "ekraan", "koer", "tass"], compound: "raamatukogu" },
+  { word1: "järv", word2: "äär", wrong: ["kell", "mobiil", "karv", "kinni", "varvas", "kamm"], compound: "järveäärne" },
+  { word1: "kool", word2: "maja", wrong: ["buffee", "tomat", "liblikas", "tass", "pudel", "taldrik"], compound: "koolimaja" },
+  { word1: "käsi", word2: "kott", wrong: ["müts", "sokk", "saabas", "püksid", "lammas", "eesel"], compound: "käekott" },
+  { word1: "sõit", word2: "rada", wrong: ["maja", "järv", "maailm", "siga", "planeet", "banaan"], compound: "sõidurada" },
+  { word1: "lille", word2: "pott", wrong: ["kitarr", "klaver", "kauss", "gorilla", "kool", "flööt"], compound: "lillepott" },
+  { word1: "tee", word2: "äär", wrong: ["sinine", "harva", "varvas", "kull", "tõuks", "morss"], compound: "teeäär" },
+  { word1: "laps", word2: "aed", wrong: ["pood", "pliiats", "karv", "muna", "joonlaua", "teritaja"], compound: "lasteaed" },
 ];
 
 let currentLevel = 0;
